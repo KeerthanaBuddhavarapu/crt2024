@@ -1,0 +1,107 @@
+NO ARGUMENTS NO RETURN VALUE
+
+SOURCE CODE:
+
+#include <stdio.h>
+  int Big(){
+        int a,b,c;
+        scanf("%d %d %d",&a,&b,&c);
+        if(a>b && a>c){
+            printf("%d",a);
+        }
+        else
+        if(b>c){
+            printf("%d",b);
+        }
+        else{
+            printf("%d",c);
+        }
+    }
+  int main(){
+      Big();
+    return 0;
+}
+
+OUTPUT:
+12 5 2
+12
+
+
+
+WITH ARGUMENTS BUT NO RETURN VALUES
+
+SOURCE CODE:
+
+#include <stdio.h>
+  int Big(int x,int y,int z){
+        
+        if(x>y && x>z){
+            printf("%d",x);
+        }
+        else
+        if(y>z){
+            printf("%d",y);
+        }
+        else{
+            printf("%d",z);
+        }
+    }
+  int main(){
+      int a,b,c;
+        scanf("%d %d %d",&a,&b,&c);
+      Big(a,b,c);
+    return 0;
+}
+
+WITH ARGUMENTS WITH RETURN VALUES
+
+SORCE CODE:
+
+#include <stdio.h>
+  int Big(int x,int y,int z){
+        
+        if(x>y && x>z){
+            return x;
+        }
+        else
+        if(y>z){
+            return y;
+        }
+        else{
+           return z;
+        }
+    }
+  int main(){
+      int a,b,c;
+        scanf("%d %d %d",&a,&b,&c);
+      int k=Big(a,b,c);
+      printf("\n%d",k);
+    return 0;
+}
+
+
+NO ARGUMENTS but  RETURN VALUE
+
+SOURCE CODE:
+
+
+#include <stdio.h>
+  int Big(){
+        int a,b,c;
+        scanf("%d %d %d",&a,&b,&c);
+        if(a>b && a>c){
+            return a;
+        }
+        else
+        if(b>c){
+          return b;
+        }
+        else{
+           return c;
+        }
+    }
+  int main(){
+      int k=Big();
+      printf("%d",k);
+    return 0;
+}
